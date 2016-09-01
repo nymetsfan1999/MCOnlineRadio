@@ -1,0 +1,76 @@
+body {
+		background:url('background.jpg');
+}
+p { 
+		margin: 20px;
+		font-size:24px;
+}
+#navigation {
+ 		background:rgba(255,255,255,0.6);
+  		width:850px;
+  		border-radius:10px;
+  		box-shadow:0px 3px 5px 5px #000;
+}
+#navigation li {
+  		border-right: 1px solid #ddd;
+  		display: inline-block;
+  		margin: 0;
+  		font-family:garamond;
+  		font-size:24px;
+  		
+}
+#navigation a {
+  		color: #333;
+  		display: block;
+  		padding: 12px 24px;
+  		text-decoration: none;
+}
+#navigation a:hover{
+		cursor:pointer;
+	    background: rgba(255,255,255,.75);
+}
+
+#footer{
+	/* Stops the logo from moving at the bottom */
+	position: fixed;
+	bottom: 0;
+}
+/* Middle box composing of the website content*/
+#wrapper{
+	margin:0 auto;
+	width:850px;
+	height:600px;
+	/*rgba signals rgb code and transparency*/
+	background:rgba(255,255,255,0.75);
+    border: solid 1px #eee;
+    border-radius:10px;
+    box-shadow:0px 3px 5px 5px #000;
+}
+#player {
+	border: 1;
+	border-color:#CCCCCC;
+}
+.stationBox{
+	padding-left: 25px;
+}
+.stationName {
+	border: 1px solid #9325BC;
+	padding: 10px;
+	font-family:Copperplate Gothic Light;
+}
+     /* :hover defines attributes only when the mouse is hovering over the object */
+.stationName:hover {
+     box-shadow: 0 0 10px #ccc;
+   	 /* Changes the cursor's appearance */
+     cursor:pointer;
+     background: rgba(255,255,255,.75);
+}
+#stationRow {
+	margin-left:20px;
+	margin-right:20px;
+}
+.stationDescription{
+	font-family:Arial;
+	font-size:15px;
+}
+

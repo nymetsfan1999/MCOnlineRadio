@@ -1,0 +1,151 @@
+<!--Default heading-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<!--references type of html-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <!--references external javascript similar to css linking-->
+    	<script type="text/javascript" src="player.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>MC Online Radio</title>
+        <link rel="stylesheet" type="text/css" href="theme.css" />
+        <!--links jquery library to website in order to use the language in scripts-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+    	<!--div divides the page allowing different attributes-->
+    	<div align="center">
+   		<img src="Frame Logo.png">
+   		<nav id="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+				<li><a href="pricing.html">Pricing</a></li>
+  			  <li><a href="contact.html">Contact Us</a></li>
+  			</ul>
+		</nav>
+   		</div>
+   		<!--Center box with text and player-->
+		
+    	<div id="wrapper">
+			<table>
+				<tr>
+				<!--Row consisting of the physical player-->	
+					<div id="playerRow" align="center">
+					<!--frame to internal source: radio player html image-->
+					<iframe src="radio_iframe.html" id="player" scrolling="no" width="350px" height="100px">
+					</iframe>
+					</div>
+				</tr>
+				<!--First row of stations-->
+				<tr  class="stationRow">
+					<td class="stationBox">
+						<p class="stationName" onclick="WHYN()">93.1</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							The Mix: Pioneer Valley's Hit Music
+						</p>
+					</td>
+					<td class="stationBox">
+						<p class="stationName" onclick="WRCH()">100.5</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							Lite 100.5 WRCH: Hartford's Lite Rock Favorites
+						</p>
+					</td>
+				</tr>
+				<!--Second row of stations-->
+				<tr  class="stationRow">
+					<td class="stationBox">
+						<p class="stationName" onclick="WMAS()">94.7</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							WMAS: Springfield's Official At Work Station
+						</p>
+					</td>
+					<td class="stationBox">
+						<p class="stationName" onclick="WKCI()">101.3</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							KC101: New Haven's Hit Music
+						</p>
+					</td>
+				</tr>
+				<!--Third row of stations-->
+				<tr  class="stationRow">
+					<td class="stationBox">
+						<p class="stationName" onclick="WKSS()">95.7</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							KISS: All The Hits of Hartford
+						</p>
+					</td>
+					<td class="stationBox">
+						<p class="stationName" onclick="WDRC()">102.9</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							The Whale: Classic Rock is Back
+						</p>
+					</td>
+				</tr>
+				<!--fourth row of stations-->
+				<tr  class="stationRow">
+					<td class="stationBox">
+						<p class="stationName" onclick="WSRS()">96.1</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							WSRS: Worcester's 80's to Now Station
+						</p>
+					</td>
+					<td class="stationBox">
+						<p class="stationName" onclick="WMRQ()">104.1</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							WMRQ: Connecticut's Alternative
+						</p>
+					</td>
+				</tr>
+				<!--Fifth row of stations-->
+				<tr  class="stationRow">
+					<td class="stationBox">
+						<p class="stationName" onclick="WTIC()">96.5</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							WTIC: Hartford's Best Variety
+						</p>
+					</td>
+					<td class="stationBox">
+						<p class="stationName" onclick="WHCN()">105.9</p>
+					</td>
+					<td>
+						<p class="stationDescription">
+							The River: Hartford's Variety Station
+						</p>
+					</td>
+				</tr>
+				<tr>
+				<!--form asking what the custom call letters of a station are-->
+					<div id="form" align="center">
+		        		<form id="submit" onsubmit="return false">
+        					<input type="text" id="callsymbol" placeholder="Enter Call Letters" name="Call Symbol"/>
+        					<input type="submit" value="Go!" onclick="callID()" />
+        					<input type="submit" value="Stop Radio" onclick="stopRADIO()">
+        				</form> <br />
+        				*Not Working? Try adding -fm to the call letters
+        			</div>
+				</tr>
+			</table>
+		</div>
+		<!--required logo for company used to find station links/player-->
+		<a href="http://www.dar.fm"><img id="footer" src="uberstations.png"></a>   
+    </body>
+</html>
