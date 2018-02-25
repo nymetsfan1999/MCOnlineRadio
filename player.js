@@ -38,7 +38,7 @@ function stopRADIO(){
 					}
 function WHYN()
         					{
-        			    	$("#player").attr('src', 'http://api.dar.fm/player_api.php?callsign=WHYN-FM&onnow_display=true&station_display=true&volume_display=true');
+        			    	$("#player").attr('src', 'http://api.dar.fm/player_api.php?callsign=WHYN FM Mix 93.1&onnow_display=true&station_display=true&volume_display=true');
       		  				return false;
         					}
 function WMAS()
